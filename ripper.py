@@ -23,23 +23,23 @@ class siteRipper(tk.Tk): #init window
             self.L3.text = "URL field was empty" #report error to user via L3 label
 
     def create_interface(self):
-        self.geometry("650x250+150+150") #set size of window
+        self.geometry("950x580+150+150") #set size of window
         L1 = tk.Label(text="URL to rip")
         L1.place(x=2, y=4, anchor="nw")
         L2 = tk.Label(text="Output Directory")
         L2.place(x=2, y=26)
         self.L3 = tk.Label() #error message label
         self.L3.place(x=140, y=210)
-        self.E1 = tk.Entry(self, width=85) #URL input field
+        self.E1 = tk.Entry(self, width=135) #URL input field
         self.E1.place(x=120, y=6)
-        self.E2 = tk.Entry(self, width=80) #Directory path field
+        self.E2 = tk.Entry(self, width=130) #Directory path field
         self.E2.place(x=150, y=30)
-        self.LB1 = tk.Listbox(self, width=85)
+        self.LB1 = tk.Listbox(self, width=135, height=30)
         self.LB1.place(x=120, y=52)
         B1 = tk.Button(self, text="Dir", command=self.saveDialog) #Dir button fires saveDialog method
         B1.place(x=120, y=26)
         B2 = tk.Button(self, text="Download", command=self.doRip) #Download button fires doRip method
-        B2.place(x=570, y=220)
+        B2.place(x=870, y=540)
         
     def saveDialog(self):
         path = tkFileDialog.askdirectory()
