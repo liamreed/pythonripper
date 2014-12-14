@@ -1,7 +1,6 @@
 import urllib2 #urllib2 required for fetching information from ripURL
 import requests #for downloading files
 import os #for directory path
-from PIL import Image
 import time #delay actions so it doesnt freeze
 import mtTkinter as tk #import mtTkinter for GUI components
 import tkFileDialog #import tkFileDialog for Open Directory window
