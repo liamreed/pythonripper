@@ -1,9 +1,0 @@
-('C:\\Users\\REE12414772\\Documents\\pythonripper\\build\\ripper\\ripper.exe',
- True,
- False,
- None,
- None,
- [],
- None,
- False,
- 1418231084L)
